@@ -6,12 +6,13 @@ using namespace std;
 int main()
 {
     double cel, fah;
-    cout << "Convert Celsius to Fahrenheit "
-            "\n";
-    cout << "Enter the value of celsius: ";
-    cin >> cel;
-    fah = (9 * cel + (32 * 5)) / 5;
-    cout << "The temperature in Celsius is " << cel << endl;
-    cout << "Celsius to Fahrenheit is : " << fah << endl;
+    cout << "\n\n Convert temperature in Fahrenheit to Celsius :\n";
+    cout << "---------------------------------------------------\n";
+    cout << " Input the temperature in Fahrenheit : ";
+    cin >> fah;
+    cel = ((fah * 5.0) - (5.0 * 32)) / 9;
+    cout << " The temperature in Fahrenheit : " << fah << endl;
+    cout << " The temperature in Celsius : " << cel << endl;
+    cout << endl;
     return 0;
 }
